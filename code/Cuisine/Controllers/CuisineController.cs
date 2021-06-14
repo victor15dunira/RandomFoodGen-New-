@@ -13,7 +13,7 @@ namespace Cuisine.Controllers
     {
         public string[] Cuisine = new[]
         {
-            "American", "Caribbean", "Vietnamese", "Korean", "Indian", "Japanese", "Spanish", "Mediterranean", "Lebanese", "French", "South African"
+            "American", "Caribbean", "Vietnamese", "Korean", "Indian", "Japanese", "Spanish", "Mediterranean", "Lebanese", "French", "Italian"
         };
 
         [HttpGet] //the method serves a get request
