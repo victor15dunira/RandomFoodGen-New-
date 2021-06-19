@@ -30,11 +30,11 @@ namespace Frontend.Controllers
             var serviceThreeResponseCall = await new HttpClient().GetStringAsync(mergedService);
             ViewBag.responseCall = serviceThreeResponseCall;
 
-
-
             return View();
 
         }
 
     }
+
+
 }
