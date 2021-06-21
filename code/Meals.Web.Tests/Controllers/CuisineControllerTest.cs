@@ -22,7 +22,9 @@ namespace Meals.Web.Tests.Controllers
             var cuisineControllerResult = cuisineController.GetCuisine();
 
             Assert.NotNull(cuisineControllerResult);
-            Assert.IsType<ActionResult<string>>(cuisineControllerResult);
+
+
+            Assert.IsType<OkObjectResult>(cuisineControllerResult);
 
 
 

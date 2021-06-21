@@ -21,10 +21,13 @@ namespace Cuisine.Controllers
         {
             var rnd = new Random();   //variable named rnd, which stores random variables 
             var rndCuisine = Cuisine[rnd.Next(0, Cuisine.Length)]; //the random function, selects a random string from the array Cuisine.
+            
 
             //Console.WriteLine($"Cusine:{rndCuisine}");
 
             return Ok(rndCuisine);
+
+      
 
         }
 

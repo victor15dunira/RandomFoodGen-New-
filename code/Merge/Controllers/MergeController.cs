@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
 namespace Merge.Controllers
 {
@@ -13,16 +14,13 @@ namespace Merge.Controllers
     [Route("[controller]")]
     public class MergeController : ControllerBase
     {
-        //Meals url 
-        //letterurl 
-        private IConfiguration Configuration;
+       
+        private AppSettings Configuration;
 
-        public MergeController(IConfiguration configuration)
+        public MergeController(IOptions<AppSettings> settings)
         {
-            Configuration = configuration;
+            Configuration = settings.Value;
         }
-
-
 
         [HttpGet]
 
@@ -30,16 +28,11 @@ namespace Merge.Controllers
         {
          
 
-            // var CuisineService = "http://localhost:35840/Cuisine";
-            var CuisineService = $"{Configuration["CuisineServiceURL"]}/Cuisine";
+            
+            var CuisineService = $"{Configuration.CuisineServiceURL}/Cuisine";
             var CuisineResponseCall = await new HttpClient().GetStringAsync(CuisineService);
 
-            
-
-
-
-  // var MealsService = "http://localhost:2861/Meals";
-            var MealsService = $"{Configuration["MealsServiceURL"]}/Meals";
+            var MealsService = $"{Configuration.MealsServiceURL}/Meals";
             var MealsResponseCall = await new HttpClient().GetStringAsync(MealsService);
 
            // if (CuisineResponseCall == "American" || MealsResponseCall == "Macaroni and Cheese")
