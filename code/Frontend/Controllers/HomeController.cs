@@ -9,7 +9,7 @@ using Frontend.Models;
 using Microsoft.Extensions.Configuration;
 using System.Net.Http;
 
-namespace Frontend.Controllers
+namespace Frontend.Controllers 
 {
     public class HomeController : Controller
     {
