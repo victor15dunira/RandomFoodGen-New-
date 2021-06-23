@@ -5,11 +5,11 @@ on:
     - master
 env:
   AZURE_WEBAPP_NAME: merge-app-service
-  AZURE_WEBAPP_PACKAGE_PATH: Merge\published
+  AZURE_WEBAPP_PACKAGE_PATH: .code/Merge\published
   AZURE_WEBAPP_PUBLISH_PROFILE: ${{ secrets.MERGE_APP_SERVICE_FFFF }}
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 5.0.x
-  WORKING_DIRECTORY: Merge
+  WORKING_DIRECTORY: ./code/Merge
 jobs:
   build:
     runs-on: windows-latest

@@ -5,11 +5,11 @@ on:
     - master
 env:
   AZURE_WEBAPP_NAME: mealsapp-app-service
-  AZURE_WEBAPP_PACKAGE_PATH: Meals\published
+  AZURE_WEBAPP_PACKAGE_PATH: .code/Meals\published
   AZURE_WEBAPP_PUBLISH_PROFILE: ${{ secrets.MEALSAPP_APP_SERVICE_FFFF }}
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 5.0.x
-  WORKING_DIRECTORY: Meals
+  WORKING_DIRECTORY: ./code/Meals
 jobs:
   build:
     runs-on: windows-latest
