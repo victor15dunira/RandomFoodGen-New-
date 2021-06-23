@@ -18,8 +18,8 @@ namespace Meals.Web.Tests.Controllers
         private AppSettings appSettings = new AppSettings()
         {
 
-            CuisineServiceURL = "https://cuisineservice.azurewebsites.net/",
-            MealsServiceURL="https://mealsservice.azurewebsites.net/"
+            CuisineServiceURL = "https://cuisineapp.azurewebsites.net/",
+            MealsServiceURL= "https://mealsapp.azurewebsites.net/"
 
         };
 
