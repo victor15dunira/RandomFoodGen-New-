@@ -10,7 +10,8 @@ using Microsoft.Extensions.Options;
 
 namespace Merge.Controllers
 {
-    [ApiController]
+    [ApiController] 
+
     [Route("[controller]")]
     public class MergeController : ControllerBase
     {
