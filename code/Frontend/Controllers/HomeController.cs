@@ -12,30 +12,7 @@ using Microsoft.Extensions.Options;
 
 namespace Frontend.Controllers 
 {
-    //public class HomeController : Controller
-    //{
-    //    private readonly IConfiguration Configuration;
-
-
-    //    public HomeController(IConfiguration configuration)
-    //    {
-
-    //        Configuration = configuration;
-    //    }
-
-    //    public async Task<IActionResult> Index()
-    //    {
-    //        var mergedService = $"{Configuration["mergedServiceURL"]}/Merge";
-    //        var mergedResponseCall = await new HttpClient().GetStringAsync(mergedService);
-    //        ViewBag.responseCall = mergedResponseCall;
-    //        return View();
-    //    }
-    //}
-
-
-
-
-
+   
     public class HomeController : Controller
     {
         private AppSettings Configuration;
