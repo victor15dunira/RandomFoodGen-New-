@@ -25,33 +25,14 @@ namespace Merge.Controllers
         [HttpGet]
 
         public async Task<IActionResult> Get()
-        {
-         
-
-            
+        {    
             var CuisineService = $"{Configuration.CuisineServiceURL}/Cuisine";
             var CuisineResponseCall = await new HttpClient().GetStringAsync(CuisineService);
 
             var MealsService = $"{Configuration.MealsServiceURL}/Meals";
             var MealsResponseCall = await new HttpClient().GetStringAsync(MealsService);
 
-           // if (CuisineResponseCall == "American" || MealsResponseCall == "Macaroni and Cheese")
-            {
-
-            }
-
-
-           // if (CuisineResponseCall == "American")
-
-              //  switch (Meal)
-                {
-
-
-                }
-
     
-
-
             var mergeResponse = $"{CuisineResponseCall} {MealsResponseCall} ";
             return Ok(mergeResponse);
         }
