@@ -96,7 +96,7 @@ The Test Coverage Report presents a summary of components tested throughout the 
 
 ### Terraform
 
-The use of Terraform was implemented in order to provide exposure to a high level descriptive programming language. Terraform was used to describe and manage infrastructure. As shown in the image below the four services were spilt into individual modules, each responsible for create Azure Web Service Applications, the main script consisted of the creation of a resource to house all the services and an application service plan, which configured the same cloud instances for each application within the plan. 
+The use of Terraform was implemented in order to provide exposure to a high level descriptive programming language. Terraform was used to describe and manage infrastructure. As shown in the image below the four services were spilt into individual modules, each responsible for creating Azure Web Service Applications, the main script consisted of the creation of a resource to house all the services and an application service plan, which configured the same cloud instances for each application within the plan. 
 
 ![RandomFoodGenerator%2006eda113b9d94d4380b79c389a61d788/Untitled%208.png](RandomFoodGenerator%2006eda113b9d94d4380b79c389a61d788/Untitled%208.png)
 
@@ -104,7 +104,7 @@ Upon completion of the Terraform scripts, the following resources were created a
 
 ![RandomFoodGenerator%2006eda113b9d94d4380b79c389a61d788/Untitled%209.png](RandomFoodGenerator%2006eda113b9d94d4380b79c389a61d788/Untitled%209.png)
 
-The relevance of Terraform was understood towards the end of the project, as it highlighted the ease of deploying various resources and management without using the azure portal ,it show cased efficiency and ease of use. With time the ease of use will improve as there is more frequent exposure to such technologies. 
+The relevance of Terraform was understood towards the end of the project, as it highlighted the ease of deploying various resources and management without using the azure portal ,it show cased efficiency and ease of use. 
 
 ## Front-End
 
